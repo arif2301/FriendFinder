@@ -1,3 +1,11 @@
+// need 3 routes
+// default route is /survey
+// route for API friends list
+// route for GIT HUB repo
+
+
+
+
 // ===============================================================================
 // DEPENDENCIES
 // We need to include the path package to get the correct file path for our html
