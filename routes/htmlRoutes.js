@@ -1,5 +1,6 @@
 // need 3 routes
-// default route is /survey
+// default route is home
+// route for survey
 // route for API friends list
 // route for GIT HUB repo
 
@@ -23,8 +24,8 @@ module.exports = function(app) {
   // In each of the below cases the user is shown an HTML page of content
   // ---------------------------------------------------------------------------
 
-  app.get("/tables", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/tables.html"));
+  app.get("/survey", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/survey.html"));
   });
 
   app.get("/reserve", function(req, res) {
