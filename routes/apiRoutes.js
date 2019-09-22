@@ -37,7 +37,7 @@ module.exports = function(app) {
     }
 
     console.log (match);
-    res.json(friends[0])
-    //res.json(match)
+    //res.json(friends[0])
+    res.json(match)
   });
 }
