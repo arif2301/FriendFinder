@@ -3,10 +3,7 @@
 
 var friends = require("../data/friends.js");
 
-
-// ===============================================================================
 // ROUTING
-// ===============================================================================
 
 module.exports = function(app) {
   app.get("/api/friends", function(req, res) {
@@ -14,7 +11,7 @@ module.exports = function(app) {
   });
 
   app.post("/api/friends", function(req, res) {
-  // req.body is available since we're using the body parsing middleware
+  // algorithm to determine best match - least difference in total score determines best match
     friends.push(req.body);
     var userid = friends.length -1;
     console.log(userid)
@@ -37,7 +34,7 @@ module.exports = function(app) {
     }
 
     console.log (match);
-    //res.json(friends[0])
+    // returning the best match
     res.json(match)
   });
 }
